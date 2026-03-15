@@ -1,4 +1,50 @@
 site_name: Alex Daniel Security Writeups
+site_description: Cybersecurity writeups and notes
+site_author: Alex Daniel
+
+theme:
+  name: material
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+    - toc.integrate
+
+nav:
+  - Home: index.md
+  - Writeups:
+      - Hack The Box: hackthebox/example.md
+  - TryHackMe: tryhackme/index.md
+  - Tools: tools/index.md
+  - Notes: notes/index.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+  - md_in_htmlsite_name: Alex Daniel Security Writeups
 site_description: Cybersecurity writeups, notes, and tools
 site_author: Alex Daniel
 
