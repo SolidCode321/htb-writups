@@ -7,3 +7,6 @@ nav:
   - Home: index.md
   - Hack The Box:
       - Example: hackthebox/example.md
+  - TryHackMe: tryhackme/index.md
+  - Tools: tools/index.md
+  - Notes: notes/index.md
