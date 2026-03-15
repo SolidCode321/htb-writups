@@ -1,4 +1,39 @@
-site_name: Alex Security Writeups
+site_name: Alex Daniel Writeups
+
+theme:
+  name: material
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Hack The Box: hackthebox/example.md
+  - TryHackMe: tryhackme/index.md
+  - Tools: tools/index.md
+  - Notes: notes/index.md
+
+plugins:
+  - searchsite_name: Alex Security Writeups
 
 theme:
   name: material
