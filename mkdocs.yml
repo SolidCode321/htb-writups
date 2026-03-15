@@ -1,0 +1,9 @@
+site_name: Alex Daniel Writeups
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Hack The Box:
+      - Example: hackthebox/example.md
