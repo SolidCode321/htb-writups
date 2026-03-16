@@ -43,12 +43,4 @@ This site documents my learning in:
 
     [:octicons-arrow-right-24: Open](tools/index.md)
 
-</div># Alex Daniel Security Writeups
-
-Welcome to my cybersecurity writeups.
-
-This website documents my journey learning:
-
-- Hack The Box
-- TryHackMe
-- Penetration testing
+</div>
