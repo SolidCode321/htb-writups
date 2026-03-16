@@ -29,11 +29,19 @@ theme:
 
 nav:
   - Home: index.md
-  - Writeups:
-      - Hack The Box: hackthebox/example.md
-  - TryHackMe: tryhackme/index.md
-  - Tools: tools/index.md
-  - Notes: notes/index.md
+
+  - Hack The Box:
+      - Overview: hackthebox/index.md
+      - Example Machine: hackthebox/example.md
+
+  - TryHackMe:
+      - Overview: tryhackme/index.md
+
+  - Tools:
+      - Overview: tools/index.md
+
+  - Notes:
+      - Overview: notes/index.md
 
 plugins:
   - search
@@ -45,6 +53,6 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
   - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
