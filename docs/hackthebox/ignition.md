@@ -2,6 +2,7 @@
 
 **Date:** March 17, 2026\
 **Status:** Completed\
+**Category:** Web
 
 ---
 
