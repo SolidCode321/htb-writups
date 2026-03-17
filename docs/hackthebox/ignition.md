@@ -1,7 +1,7 @@
 # Ignition
 
-Date: <date>
-Status: Completed
+**Date:** March 17, 2026\
+**Status:** Completed\
 
 ---
 
