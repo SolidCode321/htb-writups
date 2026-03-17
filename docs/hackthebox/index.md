@@ -4,4 +4,5 @@ This section contains my Hack The Box machine writeups.
 
 ## Machines
 
-- [Example Machine](example.md)
+- [:material-server: Example machine](example.md)
+- [:material-server: Bike](bike.md)
