@@ -42,7 +42,7 @@ nav:
       - Overview: hackthebox/index.md
       - Pennyworth: hackthebox/pennyworth.md
       - Ignition: hackthebox/ignition.md
-      - Bike: hackthebox/bike.md
+      - Bike: hackthebox/Bike.md
 
   - TryHackMe:
       - Overview: tryhackme/index.md
