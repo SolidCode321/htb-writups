@@ -16,12 +16,12 @@ This site documents my learning in:
 
 <div class="grid cards" markdown>
 
--   :material-server: **Example Machine**
+-   :material-server: **Pennyworth Machine**
 
     Difficulty: Easy  
     OS: Linux  
 
-    [:octicons-arrow-right-24: Read Writeup](hackthebox/example.md)
+    [:octicons-arrow-right-24: Read Writeup](hackthebox/pennyworth.md)
 
 </div>
 
