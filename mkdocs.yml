@@ -21,16 +21,14 @@ theme:
         name: Switch to light mode
 
   features:
-    # Navigation
+    # Navigation (LEFT SIDEBAR)
     - navigation.tabs
-    - navigation.top
     - navigation.sections
     - navigation.expand
     - navigation.tracking
 
-    # TOC Integration (KEY CHANGE)
-    - toc.integrate              # 🔥 moves TOC to LEFT sidebar
-    - toc.follow                 # 🔥 scroll-sync highlighting
+    # TOC (RIGHT SIDEBAR)
+    - toc.follow
 
     # UX Enhancements
     - content.code.copy
@@ -42,7 +40,9 @@ nav:
 
   - Hack The Box:
       - Overview: hackthebox/index.md
-      - Example Machine: hackthebox/example.md
+      - Pennyworth: hackthebox/pennyworth.md
+      - Ignition: hackthebox/ignition.md
+      - Bike: hackthebox/bike.md
 
   - TryHackMe:
       - Overview: tryhackme/index.md
@@ -64,13 +64,10 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
-  # TOC EXTENSION (IMPORTANT)
+  # TOC generator (required)
   - toc:
       permalink: true
 
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-extra_css:
-  - stylesheets/extra.css
