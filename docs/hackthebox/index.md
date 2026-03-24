@@ -7,3 +7,4 @@ This section contains my Hack The Box machine writeups.
 - [:material-server: Bike](Bike.md)
 - [:material-server: Ignition](ignition.md)
 - [:material-server: Pennyworth](pennyworth.md)
+- [:material-server: Tactics](tactics.md)
