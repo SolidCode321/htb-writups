@@ -21,10 +21,21 @@ theme:
         name: Switch to light mode
 
   features:
+    # Navigation
     - navigation.tabs
     - navigation.top
+    - navigation.sections        # 🔥 group sections in sidebar
+    - navigation.expand          # 🔥 make sidebar collapsible/expandable
+    - navigation.tracking        # 🔥 highlight active section
+
+    # TOC Integration (KEY CHANGE)
+    - toc.integrate              # 🔥 moves TOC to LEFT sidebar
+    - toc.follow                 # 🔥 scroll-sync highlighting
+
+    # UX Enhancements
     - content.code.copy
     - search.highlight
+    - navigation.instant         # ⚡ faster navigation (optional but recommended)
 
 nav:
   - Home: index.md
@@ -52,6 +63,8 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
   - md_in_html
+  - toc:
+      permalink: true           # 🔥 adds anchor links
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
