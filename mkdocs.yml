@@ -28,9 +28,6 @@ theme:
     - navigation.expand
     - navigation.tracking
 
-    # TOC (RIGHT SIDE)
-    - toc.follow
-
     # UX Enhancements
     - content.code.copy
     - search.highlight
