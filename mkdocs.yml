@@ -24,6 +24,80 @@ theme:
     # Navigation
     - navigation.tabs
     - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - navigation.tracking
+
+    # TOC (RIGHT SIDE)
+    - toc.follow
+
+    # UX Enhancements
+    - content.code.copy
+    - search.highlight
+    - navigation.instant
+
+nav:
+  - Home: index.md
+
+  - Hack The Box:
+      - Overview: hackthebox/index.md
+      - Example Machine: hackthebox/example.md
+
+  - TryHackMe:
+      - Overview: tryhackme/index.md
+
+  - Tools:
+      - Overview: tools/index.md
+
+  - Notes:
+      - Overview: notes/index.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+  # TOC EXTENSION (IMPORTANT)
+  - toc:
+      permalink: true
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.csssite_name: Alex Security Writeups
+site_description: Cybersecurity writeups, notes, and tools
+site_author: Alex Daniel
+
+theme:
+  name: material
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    # Navigation
+    - navigation.tabs
+    - navigation.top
     - navigation.sections        # 🔥 group sections in sidebar
     - navigation.expand          # 🔥 make sidebar collapsible/expandable
     - navigation.tracking        # 🔥 highlight active section
