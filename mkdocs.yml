@@ -29,6 +29,7 @@ theme:
     - navigation.tracking
 
     # TOC Integration (KEY CHANGE)
+    - toc.integrate              # 🔥 moves TOC to LEFT sidebar
     - toc.follow                 # 🔥 scroll-sync highlighting
 
     # UX Enhancements
