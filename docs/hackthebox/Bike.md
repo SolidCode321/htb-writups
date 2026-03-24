@@ -1,3 +1,137 @@
+# 🚴 Hack The Box — Bike Writeup
+
+## 📌 Machine Information
+- **Name:** Bike  
+- **Difficulty:** Easy  
+- **OS:** Linux  
+- **Category:** Web / IDOR / Information Disclosure  
+
+---
+
+## 📖 Overview
+
+Bike is an easy machine that demonstrates how **Insecure Direct Object References (IDOR)** can lead to **sensitive information disclosure**.
+
+### Attack Path:
+1. Web enumeration  
+2. Identify user functionality  
+3. Exploit IDOR vulnerability  
+4. Retrieve flag  
+
+---
+
+## 🔍 Reconnaissance
+
+### 🔹 Nmap Scan
+
+```bash
+nmap -p- -T4 -v <TARGET_IP>
+```
+
+Followed by:
+
+```bash
+nmap -sC -sV -p <OPEN_PORTS> <TARGET_IP>
+```
+
+### 🧾 Key Findings
+- **Port 80 → HTTP**
+- Web application running  
+
+---
+
+## 🌐 Web Enumeration
+
+Visit:
+
+```
+http://<TARGET_IP>
+```
+
+### 🔎 Observations
+- Bike rental web application  
+- User accounts and listings present  
+- No obvious vulnerabilities  
+
+---
+
+## 🔍 Functionality Analysis
+
+- Application allows viewing user profiles / listings  
+- URLs contain **user IDs or object IDs**  
+
+Example:
+
+```
+http://<TARGET_IP>/profile?id=1
+```
+
+---
+
+## 💥 IDOR Exploitation
+
+Modify the ID parameter:
+
+```
+id=1 → id=2 → id=3 → ...
+```
+
+### 🔹 Observation
+- Access to other users' data without authorization  
+- Sensitive data exposed  
+
+---
+
+## 🚩 Flag Retrieval
+
+- Enumerate different IDs  
+- Locate flag in one of the user profiles or data entries  
+
+---
+
+## 🧩 Key Takeaways
+
+### 🔑 IDOR Vulnerability
+- No access control on object references  
+- Users can access other users' data  
+
+### 🔑 Broken Authorization
+- Backend does not validate ownership  
+- Trusting user input directly  
+
+### 🔑 Enumeration Matters
+- Simple parameter fuzzing can lead to compromise  
+
+---
+
+## 🛡️ Mitigation Strategies
+
+- Implement proper authorization checks  
+- Use indirect references (UUIDs instead of incremental IDs)  
+- Validate user ownership on every request  
+- Log and monitor abnormal access patterns  
+
+---
+
+## 🛠️ Tools Used
+
+- `nmap`  
+- Browser  
+
+---
+
+## 🧠 Final Thoughts
+
+Bike demonstrates a classic web vulnerability:
+
+> IDOR can expose sensitive data without any complex exploitation.
+
+### Key Lessons:
+- Always test parameter manipulation  
+- Authorization is as important as authentication  
+- Even simple apps can leak critical data  
+
+---
 # Bike --- Hack The Box Write-up
 
 **Date:** March 17, 2026\
