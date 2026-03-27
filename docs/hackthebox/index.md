@@ -8,3 +8,4 @@ This section contains my Hack The Box machine writeups.
 - [:material-server: Ignition](ignition.md)
 - [:material-server: Pennyworth](pennyworth.md)
 - [:material-server: Tactics](tactics.md)
+- [:material-server: Archetype](archetype.md)
