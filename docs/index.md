@@ -16,12 +16,12 @@ This site documents my learning in:
 
 <div class="grid cards" markdown>
 
--   :material-server: **Tactics Machine**
+-   :material-server: **Archetype Machine**
 
     Difficulty: Easy  
     OS: Linux  
 
-    [:octicons-arrow-right-24: Read Writeup](hackthebox/tactics.md)
+    [:octicons-arrow-right-24: Read Writeup](hackthebox/archetype.md)
 
 </div>
 
