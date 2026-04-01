@@ -44,12 +44,29 @@ async function init() {
         
         renderNavbar();
         handleRoute();
+        setupMobileMenu();
         
         window.addEventListener('hashchange', handleRoute);
     } catch (err) {
         console.error('Failed to initialize app:', err);
         contentEl.innerHTML = `<div class="error">ERROR: SYSTEM_DATABASE_NOT_FOUND</div>`;
     }
+}
+
+function setupMobileMenu() {
+    const toggle = document.getElementById('menu-toggle');
+    if (!toggle) return;
+
+    toggle.addEventListener('click', () => {
+        navLinksEl.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside or on a link
+    document.addEventListener('click', (e) => {
+        if (!navLinksEl.contains(e.target) && !toggle.contains(e.target)) {
+            navLinksEl.classList.remove('active');
+        }
+    });
 }
 
 function renderNavbar() {
@@ -63,9 +80,13 @@ function renderNavbar() {
 function handleRoute() {
     const hash = window.location.hash || '#/';
     
+    // Close mobile menu on navigation
+    navLinksEl.classList.remove('active');
+    
     if (hash === '#/') {
         renderHome();
     } else {
+// ... existing code ...
         const parts = hash.split('/').filter(p => p && p !== '#');
         if (parts.length === 1) {
             renderCategory(parts[0]);
