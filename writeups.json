@@ -1,0 +1,41 @@
+{
+  "categories": {
+    "htb": [
+      {
+        "slug": "archetype",
+        "title": "\ud83d\udcc4 HTB: Archetype \u2014 Writeup",
+        "date": "2024-03-01"
+      },
+      {
+        "slug": "Bike",
+        "title": "\ud83d\udeb4 Hack The Box \u2014 Bike Writeup",
+        "date": "2024-03-01"
+      },
+      {
+        "slug": "pennyworth",
+        "title": "\ud83e\udde0 Hack The Box \u2014 Pennyworth Writeup",
+        "date": "2024-03-01"
+      },
+      {
+        "slug": "tactics",
+        "title": "\ud83d\udcc4 HTB: Tactics \u2014 Writeup",
+        "date": "2024-03-01"
+      },
+      {
+        "slug": "ignition",
+        "title": "\ud83d\udd25 Hack The Box \u2014 Ignition Writeup",
+        "date": "2024-03-01"
+      }
+    ],
+    "tools": [],
+    "thm": [],
+    "notes": [],
+    "picoctf": [
+      {
+        "slug": "obedient-cat",
+        "title": "PicoCTF 2024: General Skills",
+        "date": "2024-03-22"
+      }
+    ]
+  }
+}
