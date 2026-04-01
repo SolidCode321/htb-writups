@@ -236,7 +236,7 @@ main {
 }
 
 .menu-toggle {
-  display: none;
+  display: none !important;
   background: none;
   border: none;
   cursor: pointer;
