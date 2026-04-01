@@ -1,5 +1,5 @@
 ---
-title: "🚴 Hack The Box — Bike Writeup"
+title: "Hack The Box — Bike Writeup"
 date: "2024-03-01"
 ---
 
