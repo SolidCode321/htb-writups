@@ -1,5 +1,5 @@
 ---
-title: "📄 HTB: Tactics — Writeup"
+title: "HTB: Tactics — Writeup"
 date: "2024-03-01"
 ---
 
