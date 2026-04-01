@@ -235,13 +235,15 @@ main {
   opacity: 0.5;
 }
 
-.menu-toggle {
+.cyber-menu-toggle {
   display: none !important;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  z-index: 1001;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0.5rem !important;
+  z-index: 1001 !important;
+  box-shadow: none !important;
+  appearance: none !important;
 }
 
 @media (max-width: 768px) {
@@ -253,8 +255,8 @@ main {
     height: 60px;
   }
 
-  .menu-toggle {
-    display: block;
+  .cyber-menu-toggle {
+    display: block !important;
   }
 
   .nav-links {
