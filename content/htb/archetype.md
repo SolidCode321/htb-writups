@@ -1,3 +1,8 @@
+---
+title: "📄 HTB: Archetype — Writeup"
+date: "2024-03-01"
+---
+
 # 📄 HTB: Archetype — Writeup
 
 ## 🧠 Overview

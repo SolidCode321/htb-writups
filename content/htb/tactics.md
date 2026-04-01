@@ -1,3 +1,8 @@
+---
+title: "📄 HTB: Tactics — Writeup"
+date: "2024-03-01"
+---
+
 # 📄 HTB: Tactics — Writeup
 
 ---

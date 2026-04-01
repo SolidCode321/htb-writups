@@ -1,3 +1,8 @@
+---
+title: "🚴 Hack The Box — Bike Writeup"
+date: "2024-03-01"
+---
+
 # 🚴 Hack The Box — Bike Writeup
 
 ## 📌 Machine Information
