@@ -1,5 +1,5 @@
 ---
-title: "🔥 Hack The Box — Ignition Writeup"
+title: "Hack The Box — Ignition Writeup"
 date: "2024-03-01"
 ---
 
