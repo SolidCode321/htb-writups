@@ -17,8 +17,28 @@ marked.setOptions({
     breaks: true
 });
 
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+async function typewriter(text, elementId) {
+    const el = document.getElementById(elementId);
+    el.innerHTML = '';
+    for (let i = 0; i < text.length; i++) {
+        el.innerHTML += text[i];
+        await sleep(50 + Math.random() * 50);
+    }
+}
+
 async function init() {
     try {
+        // Setup initial loading state with cursor
+        contentEl.innerHTML = `<div class="loading"><span id="typewriter"></span><span class="cursor"></span></div>`;
+        
+        // Type out the initializing message
+        await typewriter('SYSTEM_INITIALIZING...', 'typewriter');
+        
+        // Artificial delay for effect
+        await sleep(1500);
+
         const response = await fetch('writeups.json');
         writeupsData = await response.json();
         
