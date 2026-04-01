@@ -1,5 +1,5 @@
 ---
-title: "🧠 Hack The Box — Pennyworth Writeup"
+title: "Hack The Box — Pennyworth Writeup"
 date: "2024-03-01"
 ---
 
