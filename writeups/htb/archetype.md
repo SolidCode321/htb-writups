@@ -1,5 +1,5 @@
 ---
-title: "📄 HTB: Archetype — Writeup"
+title: "HTB: Archetype — Writeup"
 date: "2024-03-01"
 ---
 
